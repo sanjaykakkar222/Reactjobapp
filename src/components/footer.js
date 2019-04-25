@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 
-class fotter extends Component
+class footer extends Component
 {
 
 
@@ -25,4 +25,4 @@ class fotter extends Component
     }
 }
 
-export default fotter;
+export default footer;

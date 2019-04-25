@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Header from './components/header';
 import Job from './jobs'
 
- import Fotter from './components/fotter';
+ import Footer from './components/footer';
 
 import Joblisting from './components/joblisting';
 
@@ -21,7 +21,7 @@ class App extends Component{
            <Header/>
             <JobFilter/>
            <Joblisting list={Job}/>
-           <Fotter/>
+           <Footer/>
         
          
          </div>

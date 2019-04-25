@@ -17,7 +17,7 @@ class header extends Component
   <a href="#news">Jobs</a>
   <a href="#contact">Contact</a>
   <a href="#about">SignIn</a>
-  <a href="#about">SignOut</a>
+  <a href="#about">Signout</a>
 
 </div>
         );

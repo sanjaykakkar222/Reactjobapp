@@ -17,7 +17,7 @@ class jobfilter extends Component
                <form>
                <input type="text" placeholder="Company" ></input>
                <input type="text" placeholder="Location" style={{margin: 10}}></input>
-               <input type="text" placeholder="Role"></input>
+               <input type="text" placeholder="Designation"></input>
                <button>Filter</button>
                 </form>
             </div>
