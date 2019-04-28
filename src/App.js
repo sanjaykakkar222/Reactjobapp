@@ -1,36 +1,39 @@
+
 import React, { Component } from 'react';
 
 import Header from './components/header';
-import Job from './jobs'
-
- import Footer from './components/footer';
-
-import Joblisting from './components/joblisting';
-
- import   JobFilter from './components/jobfilter';
+  import Datajob from './mockdata/jobs';
+import Content from './components/content';
+import Filter from './components/filter'
 
 
-var style={color:'red'}
-
-
-var style2={color:'yellow'}
 class App extends Component{
-   render(){
-      return(
-         <div >
-           <Header/>
-            <JobFilter/>
-           <Joblisting list={Job}/>
-           <Footer/>
+  constructor(props) {
+    super(props);
+    this.state={
+      data:Datajob
+    };
+  }
+
+  filteredData = (data) => {
+    console.log(data);
+    this.setState({
+      data: data
+    })
+  }
+
+  render(){
+     return(
+        <div  >
         
-         
-         </div>
-
-    
-
-
-      );
-   }
+           {/* <h1>Hello World</h1>
+           <h2>Hello sanjay</h2>
+           <h2>{4+5}</h2> */}
+           <Header/>
+           <Filter  name={Datajob} filteredData={this.filteredData}/>
+           <Content  name={this.state.data}/>
+        </div>
+     );
+  }
 }
 export default App;
-
